@@ -1,0 +1,92 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+  <TextView
+      android:id="@+id/titleTextView"
+      android:background="@color/design_default_color_primary"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Note Taking"
+      android:textColor="@color/design_default_color_surface"
+      android:textSize="16sp"
+      android:textAlignment="center"
+      android:padding="16dp"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:layout_marginBottom="24dp"
+      tools:ignore="MissingConstraints" />
+
+
+  <TextView
+      android:id="@+id/register_title"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="80dp"
+      android:gravity="center"
+      android:text="Register"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/firstName"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="80dp"
+      android:hint="First Name"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/register_title" />
+
+  <EditText
+      android:id="@+id/lastName"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:hint="Last Name"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/firstName" />
+
+  <EditText
+      android:id="@+id/email"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:hint="Email"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/lastName" />
+
+  <EditText
+      android:id="@+id/password"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:hint="Password"
+      android:inputType="textPassword"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/email" />
+
+  <Button
+      android:id="@+id/createButton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:text="Register"
+      app:layout_constraintTop_toBottomOf="@id/password"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

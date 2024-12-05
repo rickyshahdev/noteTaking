@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:background="@color/design_default_color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note Taking"
+        android:textColor="@color/design_default_color_surface"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter your temporary password that was sent to your email."
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+    <!-- Temporary Password Input -->
+    <EditText
+        android:id="@+id/tempPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Temporary Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <!-- Register Button -->
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete Registration" />
+
+</LinearLayout>
